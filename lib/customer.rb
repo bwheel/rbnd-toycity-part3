@@ -20,7 +20,10 @@ class Customer
     def purchase(product)
         Transaction.new(self, product)
     end
-        
+    
+    def return_purchase(product)
+        ReturnTransaction.new(self, product)
+    end
     
     def self.all
         @@Customers

@@ -31,3 +31,23 @@ class Transaction
     end
     
 end
+
+class ReturnTransaction < Transaction
+    
+    def initialize(customer, product)
+        
+        product.return
+        
+        
+        #update the class attributes
+        @@id += 1
+        
+        # Update the instance attributes
+        @id = @@id
+        @customer = customer
+        @product = product
+        
+        
+        @@transactions << self
+    end
+end
