@@ -21,6 +21,14 @@ class Product
         @stock > 0
     end
     
+    def add_stock(amount)
+        @stock += amount
+    end
+    
+    def remove_stock(amount)
+        @stock -= amount
+    end
+    
     def self.all
         @@products    
     end
