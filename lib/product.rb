@@ -5,6 +5,11 @@ class Product
     @@products = []
     
     def initialize(options = {})
+        
+        if @@products.any? { |prod| prod.title == options[:title] } 
+            throw :DuplicateProductError
+        end
+        
         @title = options[:title]
         @price = options[:price]
         @stock = options[:stock]
@@ -13,6 +18,9 @@ class Product
     end
     
     def self.all
+        
+    
+    
         @@products    
     end
     
