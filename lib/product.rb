@@ -1,6 +1,6 @@
 class Product
     
-    attr_accessor :title, :price, :stock
+    attr_accessor :title, :price, :stock, :brand
     
     @@products = []
     
@@ -56,6 +56,7 @@ class Product
         @title = options[:title]
         @price = options[:price]
         @stock = options[:stock]
+        @brand = if options[:brand] == nil then "0" else options[:brands] end
     end
     
 end
