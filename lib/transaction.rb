@@ -7,11 +7,8 @@ class Transaction
     
     def initialize(customer, product)
         
-        if product.in_stock?
-            product.remove_stock(1)
-        else
-            throw :OutOfStockError
-        end
+        product.purchase
+        
         
         #update the class attributes
         @@id += 1

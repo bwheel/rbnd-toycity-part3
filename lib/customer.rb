@@ -5,12 +5,14 @@ class Customer
     @@Customers = []
     
     def initialize(options = {})
-        if @@Customers.any? {|customer| customer.name == options[:name]}
-            throw :DuplicateCustomerError
-        end
         
+        # check for duplicates
+        check_for_duplicates(options)
+        
+        # assign the customer attribute.
         @name = options[:name]
         
+        #keep track of the new customer instance.
         @@Customers << self
         
     end
@@ -28,4 +30,14 @@ class Customer
         @@Customers.select {|customer| customer.name == search_name }[0]
     end
 
+    private 
+    
+    def check_for_duplicates(options = {})
+        if @@Customers.any? {|customer| customer.name == options[:name]}
+            throw :DuplicateCustomerError
+        end
+    end
+    
+    
+        
 end

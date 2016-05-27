@@ -6,14 +6,13 @@ class Product
     
     def initialize(options = {})
         
-        if @@products.any? { |prod| prod.title == options[:title] } 
-            throw :DuplicateProductError
-        end
+        # check for duplicates
+        check_for_duplicates(options)
         
-        @title = options[:title]
-        @price = options[:price]
-        @stock = options[:stock]
+        #assign the instance variables with data.
+        assign_attributes(options)
         
+        # keep track of this instance in the class list.
         @@products << self
     end
     
@@ -21,12 +20,16 @@ class Product
         @stock > 0
     end
     
-    def add_stock(amount)
-        @stock += amount
+    def return
+        @stock += 1
     end
     
-    def remove_stock(amount)
-        @stock -= amount
+    def purchase
+        if in_stock?
+            @stock -= 1
+        else
+            throw :OutOfStockError
+        end
     end
     
     def self.all
@@ -39,6 +42,20 @@ class Product
     
     def self.in_stock
        @@products.select { |prod| prod.stock > 0 }
+    end
+    
+    private
+    
+    def check_for_duplicates(options = {})
+        if @@products.any? { |prod| prod.title == options[:title] } 
+            throw :DuplicateProductError
+        end
+    end
+    
+    def assign_attributes(options = {})    
+        @title = options[:title]
+        @price = options[:price]
+        @stock = options[:stock]
     end
     
 end
