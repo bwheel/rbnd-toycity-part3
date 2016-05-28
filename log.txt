@@ -1,0 +1,125 @@
+commit 4450363885e141e319f6cf254062213351fda123
+Author: bwheel1990@gmail.com <Norby0317>
+Date:   Fri May 27 20:39:46 2016 -0500
+
+    adding reflections file.
+
+commit 5c3778edf4ec49b19706444bff54af13b791e059
+Author: bwheel1990@gmail.com <Norby0317>
+Date:   Fri May 27 20:33:12 2016 -0500
+
+    adjusted the tab sizes an formatting
+
+commit 058801425436460e5c38b49e4ef88f20ad3ebc25
+Author: bwheel1990@gmail.com <Norby0317>
+Date:   Fri May 27 17:45:03 2016 -0500
+
+    missed a brand file change
+
+commit 5c369f8d6ce707c11fbe612873fa61e5f9ed82c5
+Author: bwheel1990@gmail.com <Norby0317>
+Date:   Fri May 27 17:43:32 2016 -0500
+
+    finised adding brand
+
+commit 1523b04b0be1d42d1f3186d729031cb136be6ac2
+Author: bwheel1990@gmail.com <Norby0317>
+Date:   Fri May 27 15:15:55 2016 -0500
+
+    implemented return transactions
+
+commit dcb327badfbea1c351ece89acdc8cdc1e6976ad4
+Author: bwheel1990@gmail.com <Norby0317>
+Date:   Thu May 26 22:54:12 2016 -0500
+
+    refactored purchase from customer
+
+commit a5f4ef3e1f1677a4d3fe808554cbe4986dc9ae21
+Author: bwheel1990@gmail.com <Norby0317>
+Date:   Thu May 26 22:23:19 2016 -0500
+
+    added purchase functionality to the customer and transaction and product. also added OutOfStock exception throwing.
+
+commit 2765886882603e3dd89d2fedaad5a0ea6e009258
+Author: bwheel1990@gmail.com <Norby0317>
+Date:   Thu May 26 22:12:17 2016 -0500
+
+    implemented basic transaction creation functionality
+
+commit 142f98e5ddc48104ecd00410367caace281a8846
+Author: bwheel1990@gmail.com <Norby0317>
+Date:   Thu May 26 22:05:55 2016 -0500
+
+    finishing touches to the customers class
+
+commit 9fce01c5ac40b632b4e2ff356cb5d20a05e471e3
+Author: bwheel1990@gmail.com <Norby0317>
+Date:   Thu May 26 22:01:47 2016 -0500
+
+    created customer class and class array of customers
+
+commit 253f669844219069f65b0f5c4f7fdcd7afa9d8af
+Author: bwheel1990@gmail.com <Norby0317>
+Date:   Thu May 26 21:57:05 2016 -0500
+
+    implemented title search and stock functionality.
+
+commit 1459b78aec91a1fa85d7871fc03104ce17b3a842
+Author: bwheel1990@gmail.com <Norby0317>
+Date:   Thu May 26 21:38:08 2016 -0500
+
+    add duplicate production functionality
+
+commit 3c67ddacdb66adc6a79c9a1967f887f10aa0d4c6
+Author: bwheel1990@gmail.com <Norby0317>
+Date:   Thu May 26 21:23:47 2016 -0500
+
+    Add ability to create and count products
+
+commit 621875e9f934d8b51baf354d6ba7f4205e1513c3
+Author: bwheel1990@gmail.com <Norby0317>
+Date:   Wed May 25 22:05:31 2016 -0500
+
+    Initial project commit, set up visual studio code to run ruby files and debug and tested that app.rb works
+
+commit fc2d17c24d98def6997cb0e71ff49aee8c3ee557
+Author: Jerome Chenette <jerome.chenette@gmail.com>
+Date:   Thu Apr 7 11:53:19 2016 -0700
+
+    New Rubric linked
+
+commit 14c21e10423a3f57bf17931b8ccdd803e240d5d1
+Author: Julia Van Cleve <julia@jmv.me>
+Date:   Tue Jan 12 01:23:47 2016 -0800
+
+    Output return values to the command line
+
+commit 50ecd4c9f92a4a76d414cb22a39a25c34e902525
+Author: Julia Van Cleve <julia@jmv.me>
+Date:   Fri Jan 8 12:02:31 2016 -0800
+
+    Removed zip file requirement
+
+commit f500dd1d9d903c1b9d49b3c9665f6a011616c546
+Author: Julia Van Cleve <julia@jmv.me>
+Date:   Thu Jan 7 09:04:43 2016 -0800
+
+    Fixed typo
+
+commit 1557be82014b78b0773f8f7bc129712e3a324286
+Author: Walter Latimer <walter@walterlatimer.com>
+Date:   Wed Jan 6 02:17:14 2016 -0500
+
+    Fix typos
+
+commit ec4113db8edbd9c69e15dc85b21875c3472ca3fa
+Author: Walter Latimer <walter@walterlatimer.com>
+Date:   Tue Jan 5 23:12:59 2016 -0500
+
+    Add LICENSE
+
+commit 1e66c23ba283ea433767f58d9a9e796282046d5c
+Author: Walter Latimer <walter@walterlatimer.com>
+Date:   Tue Jan 5 23:09:18 2016 -0500
+
+    Initial commit
