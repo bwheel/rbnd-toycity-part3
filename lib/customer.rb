@@ -36,7 +36,7 @@ class Customer
   
   def check_for_duplicates(options = {})
     if @@Customers.any? {|customer| customer.name == options[:name]}
-      raise :DuplicateCustomerError
+      raise :DuplicateCustomerError, "#{self.name} customer already exists"
     end
   end
   
