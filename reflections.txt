@@ -1,0 +1,8 @@
+I spent a couple hours over two days working on this project.
+
+
+The most rewarding challenge was adding the custom features.
+
+The two additional features are returning a transaction, and incorporating an optional branding that gets assigned to products.
+
+I'm still getting used to the list functions and syntax.
