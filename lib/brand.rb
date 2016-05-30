@@ -21,7 +21,7 @@ class Brand
 
   def check_for_duplicates(options = {})
     if @@brands.any? { |brand| brand.name == options[:name] }
-      raise :DuplicateBrandError, "#{self.name} brand already exists"
+      raise DuplicateBrandError, "#{self.name} brand already exists"
     end
   end
 end
