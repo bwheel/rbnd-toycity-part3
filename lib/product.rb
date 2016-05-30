@@ -28,7 +28,7 @@ class Product
     if in_stock?
       @stock -= 1
     else
-      raise OutOfStockError, "{self.name} is out of stock."
+      raise OutOfStockError, "#{self.title} is out of stock."
     end
   end
   
@@ -48,7 +48,7 @@ class Product
   
   def check_for_duplicates(options = {})
     if @@products.any? { |prod| prod.title == options[:title] } 
-      raise DuplicateProductError, "#{self.name} already exists"
+      raise DuplicateProductError, "#{self.title} already exists"
     end
   end
   
